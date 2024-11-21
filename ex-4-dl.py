@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing import image
 model = VGG16(weights='imagenet', include_top=False)
 
 # Load and preprocess an image
-img_path = 'D:\Arun\SSN\sem-7\DL\Lab\image.jpg'  # Replace with your image path
+img_path = 'img_path'  # Replace with your image path
 img = image.load_img(img_path, target_size=(224, 224))
 img_array = image.img_to_array(img)
 img_array = np.expand_dims(img_array, axis=0)
